@@ -39,6 +39,8 @@ const setupInput = function(conn) {
       connection.write("Move: right");
     } else if (key === '\033[D') {
       connection.write("Move: left");
+    } else if (key === 'c') {
+      connection.write("Say: ciao losers!")
     }
   };
   
